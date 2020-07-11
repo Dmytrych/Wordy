@@ -6,10 +6,9 @@ namespace Wordy
     {
         static void Main(string[] args)
         {
-            Bot bot = new Bot();
+            Bot.Start();
             while(true)
             {
-                bot.botClient.StartReceiving();
             }
         }
     }
