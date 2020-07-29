@@ -28,9 +28,11 @@ namespace Wordy
             botClient = new TelegramBotClient(AppSettings.APIToken);
             botClient.OnMessage += CommandProcessor.RunCommand;
 
+            //Add new commands here
             commands = new List<Command>();
             commands.Add(new SayHelloCommand());
-            commands.Add(new ButtonTestCommand());
+            commands.Add(new AddWordCommand());
+            commands.Add(new ShowUserWordsCommand());
 
             botClient.StartReceiving();
         }
