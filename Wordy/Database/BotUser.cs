@@ -10,6 +10,7 @@ namespace Wordy.Database
         public int Id { get; set; }
         public long? Chat { get; set; }
 
+        public Word LastQuizWord { get; set; }
         public ICollection<Word> Words { get; set; }
         public BotUser()
         {

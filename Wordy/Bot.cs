@@ -30,9 +30,11 @@ namespace Wordy
 
             //Add new commands here
             commands = new List<Command>();
-            commands.Add(new SayHelloCommand());
+            commands.Add(new StartCommand());
             commands.Add(new AddWordCommand());
             commands.Add(new ShowUserWordsCommand());
+            commands.Add(new AskCommand());
+            commands.Add(new QuestionAnswerCommand());
 
             botClient.StartReceiving();
         }
